@@ -1,16 +1,19 @@
 import React from 'react';
 import NavTabs from './NavTabs'
+import NavSearch from './NavSearch'
 
 const NavBar = () => {
 
     return (
-    <div className='nav-bar'> I am NavBar
+    <div className='nav-bar'>
 
     {/* search */}
         {/* logo */}
         {/* search-bar */}
         {/* buttons */}
     {/* menu */}
+
+    <NavSearch/>
     <NavTabs/>
     </div>
     )
