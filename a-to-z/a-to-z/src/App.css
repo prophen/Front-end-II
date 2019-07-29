@@ -20,13 +20,20 @@
 /* temp */
 
 .nav-bar{
-  background-color: rgb(244, 244, 189);
+  /* background-color: rgb(244, 244, 189); */
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-tabs{
-  background-color: rgb(244, 215, 189);
+  /* background-color: rgb(244, 215, 189); */
+  display: flex;
+}
+
+.nav-img-search{
+  display: flex;
 }
 
 .nav-search{
-  background-color: rgb(244, 150, 189);
+  /* background-color: rgb(244, 150, 189); */
 }
