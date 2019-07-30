@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  margin: 8%;
+  margin-top: 3%;
+  
 }
 
 .App-header {
@@ -17,23 +20,43 @@
   color: #61dafb;
 }
 
-/* temp */
 
+/* navigation bar*/
 .nav-bar{
-  /* background-color: rgb(244, 244, 189); */
   display: flex;
   justify-content: space-between;
 }
 
+/* tabs */
 .nav-tabs{
-  /* background-color: rgb(244, 215, 189); */
+  margin-top: 1%;
+  width: 40%;
+  height: 1.5rem;
+  border: 2px solid #F79824;
+}
+.menu{
+  width: 100%;
   display: flex;
+  justify-content: space-around;
+ 
+  font-size: 1rem;
+  padding: 1%;
+}
+/* search */
+
+.nav-search{
+  /* background-color: rgb(244, 150, 189); */
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .nav-img-search{
   display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: #282c34; */
 }
 
-.nav-search{
-  /* background-color: rgb(244, 150, 189); */
-}

@@ -4,7 +4,8 @@ import {Menu} from 'semantic-ui-react';
 const NavTabs = () => {
 
     return (
-    <Menu.Menu className='nav-tabs'>    
+    <div className='nav-tabs'>
+    <Menu.Menu >    
     <Menu.Item
     name='your-bookings'
     />
@@ -17,6 +18,7 @@ const NavTabs = () => {
     <Menu.Item
     name='help'
     /></Menu.Menu>
+    </div>
     )
 }
 export default NavTabs
