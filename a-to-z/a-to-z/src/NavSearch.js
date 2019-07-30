@@ -10,7 +10,7 @@ const NavSearch = () => {
     <div className='nav-img-search'> 
     <Image src="https://i.ibb.co/kc2Lq8X/atoz.png" size='tiny' width='200px'/>
     
-    <Input icon='search' placeholder='Search...' ></Input>
+    <Input icon='search' placeholder='Search...'></Input>
     </div>
 
 
