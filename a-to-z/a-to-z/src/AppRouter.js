@@ -9,13 +9,13 @@ import ExperienceList from "./containers/ExperienceList/ExperienceList"
 export default function AppRouter() {
   return (
     <>
-      <Route exact path="/" component={ExperienceTypeList} />
-      <Route exact path="/" component={AllExperiences} />
-
       <Switch>
         <Route path="/experiences/add" component={AddExperience} />
         <Route path="/experiences/all" component={ExperienceList} />
         <Route path="/experiences/:id" component={SingleExperience} />
+
+      
+
       </Switch>
     </>
   );
