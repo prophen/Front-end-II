@@ -13,6 +13,9 @@ export default function AppRouter() {
         <Route path="/experiences/add" component={AddExperience} />
         <Route path="/experiences/all" component={ExperienceList} />
         <Route path="/experiences/:id" component={SingleExperience} />
+
+      
+
       </Switch>
     </>
   );
