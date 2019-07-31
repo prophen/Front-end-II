@@ -1,0 +1,8 @@
+.grid-view {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+p {
+  text-align: left;
+}
