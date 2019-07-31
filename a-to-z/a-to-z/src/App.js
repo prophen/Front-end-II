@@ -13,7 +13,7 @@ function App() {
       <AppRouter />
 
 {/* temp */}
-{/* <SignUpForm /> */}
+<SignUpForm />
 <LoginForm/>
 
 
