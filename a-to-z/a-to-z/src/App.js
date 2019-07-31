@@ -15,8 +15,8 @@ function App() {
 
       {/* what values will we have, where are we making axios to? */}
       
-      <LoginForm/>
-      <SignUp/>
+      {/* <LoginForm/>
+      <SignUp/> */}
 
     </div>
   );
