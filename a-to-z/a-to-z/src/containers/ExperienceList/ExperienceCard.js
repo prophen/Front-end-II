@@ -8,7 +8,7 @@ function ExperienceCard(props) {
   const { id, title, location,guests,availability,price } = props.experience;
   return (
     <Card>
-      <Image src='https://loremflickr.com/300/300' wrapped ui={false} />
+      <Image src='http://www.sparkawards.com/wp-content/uploads/2014/03/Experience3-72.jpg' wrapped ui={false} />
       <Card.Content>
         <Card.Header>{title}</Card.Header>
         <Card.Meta>Price: {price}</Card.Meta>
