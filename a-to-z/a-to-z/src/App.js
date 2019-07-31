@@ -1,6 +1,6 @@
 import React from "react";
 import AppRouter from "./AppRouter";
-import NavBar from "./NavBar";
+import NavBar from "./containers/NavBar/NavBar.js";
 
 import "./App.css";
 
