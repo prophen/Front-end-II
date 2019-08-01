@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { experiences } from "../../data/experiences";
 import { Card, Image } from "semantic-ui-react";
+import axios from 'axios'
 
 function SingleExperience(props) {
-  const [experience, SetExperience] = useState(
-    experiences[props.match.params.id]
-  );
+  const [experience, setExperience] = useState([]);
   console.log(props);
-  console.log(experience);
+  useEffect(() => {
+    const id = props.match.params.id
+
+    axios.get(`https://api.sheety.co/5a0ddd0f-0fe3-42ae-9556-7bbefd288e3f`)
+    .then(res => {
+      console.log(res.data[id])
+      setExperience(res.data[id])
+    })
+  },[props.match.params.id])
   const {
     
     title,
@@ -18,6 +25,10 @@ function SingleExperience(props) {
     photos,
     host_name
   } = experience;
+  console.log(experience)
+  if (!experience) {
+    return <div>Loading...</div>
+  }
   return (
     <Card fluid>
       <Card.Content>
