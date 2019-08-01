@@ -2,6 +2,7 @@
   text-align: center;
   margin: 8%;
   margin-top: 3%;
+  height: 100%;
 }
 
 .App-header {
@@ -18,3 +19,18 @@
 .App-link {
   color: #61dafb;
 }
+
+#sign-up-form{
+  margin-top: 35%;
+  
+}
+
+#login-form{
+  margin-top: 35%;
+}
+
+#type-of-experience{
+  width: 10rem;
+  height: 11rem;
+}
+
