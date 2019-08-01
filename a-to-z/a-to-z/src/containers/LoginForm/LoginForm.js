@@ -58,20 +58,23 @@ const LoginForm = (props) => {
             <Grid.Column>
 
             <Form id='login-form' onSubmit={handleLogin}>
+            <Message>
+            <p>Log In</p>
+
             <Form.Input id='form-input-user-email' fluid icon='user' iconPosition='left' placeholder='E-mail address' value={user.username} onChange={handleChange}/>
 
             <Form.Input id='form-input-user-password'fluid icon='lock' iconPosition='left' placeholder='Password' value={user.password} onChange={handleChange}/>
             {/* <Form.Checkbox label='Remember me' /> */}
            
-            <Message> 
             <Form.Checkbox label='Remember me' />
+            <p>
             <Link to='/forgot-password'> Forgot password? </Link>
-            </Message>
+            </p>
            
-            
             <Button type='submit'>Submit</Button>
 
-            <Message> Don't have an account? <Link to='/signup'> Sign up </Link> </Message>
+            <p> Don't have an account? <Link to='/signup'> Sign up </Link> </p>
+            </Message>
             </Form>
 
             </Grid.Column>
