@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import { Form, Button, Message} from 'semantic-ui-react';
+import {Form, Button, Message, Checkbox} from 'semantic-ui-react';
+import {Link} from 'react-router-dom';
 import axios from 'axios';
 import { get } from 'https';
 
@@ -56,12 +57,18 @@ const LoginForm = () => {
             <Form.Input id='form-input-user-email' fluid icon='user' iconPosition='left' placeholder='E-mail address' value={user.username} onChange={handleChange}/>
 
             <Form.Input id='form-input-user-password'fluid icon='lock' iconPosition='left' placeholder='Password' value={user.password} onChange={handleChange}/>
+            {/* <Form.Checkbox label='Remember me' /> */}
+           
+            <Message> 
             <Form.Checkbox label='Remember me' />
-            <div><a href='#'>Forgot password?</a> </div>
+            <Link to='/forgot-password'> Forgot password? </Link>
+            </Message>
+           
             
             <Button type='submit'>Submit</Button>
 
-            <Message> Don't have an account? <a href='#'>Sign Up</a> </Message>
+            <Message> Don't have an account? <Link to='/signup'> Sign up </Link> </Message>
+            
     
  
       </Form>

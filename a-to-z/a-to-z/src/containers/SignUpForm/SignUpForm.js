@@ -1,5 +1,6 @@
 import React from 'react';
 import {Form, Message} from 'semantic-ui-react';
+import { Link } from 'react-router-dom';
 
 const SignUpForm = () => {
     return (
@@ -23,7 +24,8 @@ const SignUpForm = () => {
             <Form.Button id='sign-up-form-submit-button'> Submit </Form.Button>
 
             <Message>
-              Already have an account? <a href='#'>Log in</a>
+              Already have an account? 
+              <Link to='/login'> Log in </Link>
             </Message>
 
 

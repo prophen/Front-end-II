@@ -15,8 +15,8 @@ function App() {
       <AppRouter />
 
 {/* temp */}
-<SignUpForm />
-<LoginForm/>
+{/* <SignUpForm /> */}
+{/* <LoginForm/> */}
 
 
     </div>
