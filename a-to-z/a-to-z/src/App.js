@@ -17,7 +17,7 @@ function App() {
     }} >
       <NavBar />
       <AppRouter />
-      <LoggedIn/>
+    
     </div>
   );
 }
