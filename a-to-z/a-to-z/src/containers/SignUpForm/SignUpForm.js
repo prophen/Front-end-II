@@ -25,24 +25,20 @@ const SignUpForm = (props) => {
     };
 
     return (
-        <div className='sign-up-form'> 
-
-        <Grid centered columns={2} verticalAlign='middle' >
+        <Grid centered columns={2} verticalAlign='middle'  >
         <Grid.Column>
-        <Form id='sign-up-form' onSubmit={handleSubmit} >
-             <Message>
-                 Let's do something exciting!
-             </Message>
+        <Form id='sign-up-form' onSubmit={handleSubmit}>
+        <Message>
+           <p>  Let's do something exciting!</p>
 
             <Form.Input id='sign-up-form-email' placeholder='E-mail' 
            name='email' onChange={handleChange}/>
-
 
             <Form.Input id='sign-up-form-first-name' placeholder='First-name' name='fistName' onChange={handleChange}/>
 
             <Form.Input id='sign-up-form-last-name' placeholder='Last-name' name='lastName' onChange={handleChange}/>
 
-            Please enter your date of birth. To sign up, you must 18+
+            <p>Please enter your date of birth. </p>
             
             <Form.Input id='sign-up-form-birth-month' width={6} placeholder='month' name='birthMonth' onChange={handleChange}/>
             <Form.Input id='sign-up-form-birth-day' width={2} placeholder='day' name='birthDay' onChange={handleChange}/>
@@ -50,22 +46,16 @@ const SignUpForm = (props) => {
 
             <Form.Button id='sign-up-form-submit-button'> Submit </Form.Button>
 
-            <Message>
+            <p>
               Already have an account? 
               <Link to='/login'> Log in </Link>
+            </p>
+
             </Message>
-
-
         </Form>
         </Grid.Column>
         </Grid>
    
-
-        </div>
-
-
-
-
     );
 };
 
