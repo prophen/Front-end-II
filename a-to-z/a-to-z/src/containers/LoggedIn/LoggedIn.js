@@ -68,21 +68,22 @@ const LoggedIn = () =>{
             </h2>
 
             {/* display some of the expereinces details */}
-            {/* sheety version */}
-            <Grid  container columns={5} centered >
+            {/* mockaroo version */}
+            {/* <Grid  container columns={5} centered >
                 {experience.slice(0, 5).map((i, key) => (
                     <Grid.Column><ExperienceGenCard key={key} title={i.titleActivity} image={i.imageActivity} description={i.descriptionActivity} host={i.hostActivity} location={i.locationActivity} type={i.typeActivity}/>
                     </Grid.Column>
             ))}
-            </Grid>
+            </Grid> */}
             
             {/* display some of the expereinces details */}
-            {/* mockaroo version */}
+            {/* sheety version */}
             <Grid  container columns={3} centered >
             {experienceN.map((i, key) => (
                 <Grid.Column><ExperienceGenCard key={key} availability={i.availability} image={i.photos} price={i.price} host={i.host_name} location={i.location} type={i.title}/> </Grid.Column>
             ))}
             </Grid> 
+
             </Grid>
         </div>
     )

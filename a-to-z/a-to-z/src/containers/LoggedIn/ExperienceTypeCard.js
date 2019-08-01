@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Image, Item } from 'semantic-ui-react';
+import {Card, Image} from 'semantic-ui-react';
 
 const ExperienceTypeCard = (props) =>{
 
@@ -7,10 +7,10 @@ const ExperienceTypeCard = (props) =>{
 
     return(
         <Card >
-        <Image src={image} wrapped ui={false}/>
-        <Card.Content>
-        {title}
-        </Card.Content>
+            <Image src={image} wrapped ui={false}/>
+            <Card.Content>
+                {title}
+            </Card.Content>
         </Card>
     )
 }
