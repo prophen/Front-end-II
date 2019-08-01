@@ -44,8 +44,8 @@ const LoggedIn = () =>{
             <Link to='/experiences/all'>  <Icon name='angle right' size='large' />
             </Link>
 
-            <Grid container columns={4} centered >
-            {experience.slice(0, 4).map((i, key) => (
+            <Grid  container columns={5} centered >
+            {experience.slice(0, 5).map((i, key) => (
                 <Grid.Column><ExperienceGenCard key={key} title={i.titleActivity} image={i.imageActivity} description={i.descriptionActivity} host={i.hostActivity} location={i.locationActivity} type={i.typeActivity}/> </Grid.Column>
             ))}
             </Grid>
