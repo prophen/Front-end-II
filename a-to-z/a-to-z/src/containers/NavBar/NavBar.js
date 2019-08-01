@@ -7,7 +7,7 @@ const NavBar = () =>{
         <div>
             <Menu>
             {/* logo */}
-            <NavLink to="/you">
+            <NavLink to="/">
             <Image src="https://i.ibb.co/kc2Lq8X/atoz.png" size='small' />
             </NavLink>
 

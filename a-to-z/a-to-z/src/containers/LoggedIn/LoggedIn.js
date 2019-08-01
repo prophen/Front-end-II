@@ -1,7 +1,8 @@
 import React, {useState, useEffect}from 'react';
-import {Grid, Item} from 'semantic-ui-react';
+import {Grid, Item, Icon} from 'semantic-ui-react';
 import axios from 'axios';
-import ExperienceTypeCard from './ExperienceTypeCard'
+import ExperienceTypeCard from './ExperienceTypeCard';
+import {Link} from 'react-router-dom';
 
 
 const LoggedIn = () =>{
@@ -36,6 +37,11 @@ const LoggedIn = () =>{
             ))}
 
             </Grid>
+
+            <Item>All Experience</Item> 
+            <Link to='/experiences/all'>  <Icon name='angle right' size='large' />
+            </Link>
+
 
 
         </div>
