@@ -1,7 +1,7 @@
 import React from "react";
 import AppRouter from "./AppRouter";
 import NavBar from "./containers/NavBar/NavBar.js";
-
+import LoggedIn from "./containers/LoggedIn/LoggedIn.js";
 
 import "./App.css";
 
@@ -17,6 +17,7 @@ function App() {
     }} >
       <NavBar />
       <AppRouter />
+      <LoggedIn/>
     </div>
   );
 }
