@@ -13,8 +13,11 @@ const NavBar = () =>{
 
             {/* tabs */}
             <Menu.Menu className='menu-tabs' position='right'>
+            <Menu.Item name='All Experiences' > 
+                <NavLink to="/experiences/all">See all experiences</NavLink> 
+                </Menu.Item>
                 <Menu.Item name='Host an experience' > 
-                <NavLink to="/hostanexpereince">Host an experience</NavLink> 
+                <NavLink to="/experiences/add">Host an experience</NavLink> 
                 </Menu.Item>
 
                 <Menu.Item name='Sign up'> 

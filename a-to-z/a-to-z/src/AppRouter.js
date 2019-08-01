@@ -6,19 +6,19 @@ import ExperienceTypeList from "./ExperienceTypeList";
 import AllExperiences from "./AllExperiences";
 import ExperienceList from "./containers/ExperienceList/ExperienceList";
 import SignUpForm from "./containers/SignUpForm/SignUpForm";
-import LoginForm from "./containers/LoginForm/LoginForm";
+import LoginForm from "./containers/LoginForm/LoginForm"
 import LoggedIn from "./containers/LoggedIn/LoggedIn";
 
 export default function AppRouter() {
   return (
     <>
       <Switch>
+        <Route exact path="/" component={LoggedIn} />
         <Route path="/experiences/add" component={AddExperience} />
-        {/* <Route exact path="/" component={ExperienceList} /> */}
+        <Route path="/experiences/all" component={ExperienceList} />
         <Route path="/experiences/:id" component={SingleExperience} />
         <Route path="/signup" component={SignUpForm} />
         <Route path="/login" component={LoginForm} />
-        <Route path="/you" component={LoggedIn} />
       </Switch>
     </>
   );
