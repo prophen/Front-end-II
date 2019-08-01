@@ -14,11 +14,12 @@ const ExperienceGenCard = (props) =>{
 
     return(
         <Card id='experience-gen-card'
-        image='http://www.sparkawards.com/wp-content/uploads/2014/03/Experience3-72.jpg'
+        // image='http://www.sparkawards.com/wp-content/uploads/2014/03/Experience3-72.jpg'
         header={title}
         meta={type}
         description={description}
         extra={extra}
+        image={image}
       />
 
     )
