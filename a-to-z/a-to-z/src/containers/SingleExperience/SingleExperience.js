@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { experiences } from "../../data/experiences";
-import { Card, Image } from "semantic-ui-react";
+import {Link} from 'react-router-dom'
+import { Card, Image, Button, Loader, Dimmer } from "semantic-ui-react";
+import './SingleExperience.css';
 import axios from 'axios'
 
 function SingleExperience(props) {
@@ -26,23 +27,28 @@ function SingleExperience(props) {
     host_name
   } = experience;
   console.log(experience)
-  if (!experience) {
-    return <div>Loading...</div>
+  if (!photos) {
+    return (
+    <Dimmer active>
+        <Loader>Loading</Loader>
+      </Dimmer>)
   }
   return (
-    <Card fluid>
+    <Card className="single-exp">
       <Card.Content>
         <Card.Header>{title}</Card.Header>
 
         <Card.Description>
-          <Image src={photos} floated="right" />
+          
           <p>Your Host: {host_name}</p>
           <p>Price: {price}</p>
           <p>Location: {location}</p>
           <p>Number of Guests Attending: {guests}</p>
           <p>Available? {availability ? "Yes" : "No"}</p>
+          <Button as={Link} to="/login">Book this Experience Now</Button>
         </Card.Description>
       </Card.Content>
+      <Image src={photos} />
     </Card>
   );
 }

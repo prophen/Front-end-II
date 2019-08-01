@@ -1,0 +1,18 @@
+/* h1 {
+  padding: 20px;
+  margin: 20px 20px;
+} */
+
+.ui.card.add-card{
+
+  width:80%;
+  margin: auto;
+  padding: 20px;
+}
+input {
+  width: 80%;
+}
+label {
+  text-align: left;
+}
+
