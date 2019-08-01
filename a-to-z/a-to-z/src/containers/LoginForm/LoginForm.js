@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react';
 import {Form, Button, Message, Grid} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-// import { get } from 'https';
 
 function axiosWithAuth() {
     const token = window.localStorage.getItem('token');
@@ -79,14 +78,6 @@ const LoginForm = (props) => {
 
             </Grid.Column>
         </Grid>
-    
-
-
-
-
-        
-
-
 
     )
 
