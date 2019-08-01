@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import {Form, Button, Message, Checkbox} from 'semantic-ui-react';
+import {Form, Button, Message, Grid} from 'semantic-ui-react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
-import { get } from 'https';
+// import { get } from 'https';
 
 function axiosWithAuth() {
     const token = window.localStorage.getItem('token');
@@ -13,14 +13,16 @@ function axiosWithAuth() {
     })
 }
 
-const LoginForm = () => {
-    
+const LoginForm = (props) => {
+    const {history} = props;
     const [user, setUser] = useState({username: '', password: ''});
 
+    // to update the values for username and password
     const handleChange = event => {
         setUser({...user, [event.target.name]: event.target.value});
     }
 
+    // to validate the login information
     const handleLogin = event => {
         event.preventDefault();
         axios.post('link', user)
@@ -52,8 +54,10 @@ const LoginForm = () => {
 
     }, [])
     return(
-   
-        <Form id='login-form' onSubmit={handleLogin}>
+        <Grid centered columns={2} verticalAlign='middle'>
+            <Grid.Column>
+
+            <Form id='login-form' onSubmit={handleLogin}>
             <Form.Input id='form-input-user-email' fluid icon='user' iconPosition='left' placeholder='E-mail address' value={user.username} onChange={handleChange}/>
 
             <Form.Input id='form-input-user-password'fluid icon='lock' iconPosition='left' placeholder='Password' value={user.password} onChange={handleChange}/>
@@ -68,10 +72,10 @@ const LoginForm = () => {
             <Button type='submit'>Submit</Button>
 
             <Message> Don't have an account? <Link to='/signup'> Sign up </Link> </Message>
-            
-    
- 
-      </Form>
+            </Form>
+
+            </Grid.Column>
+        </Grid>
     
 
 

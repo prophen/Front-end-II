@@ -14,7 +14,7 @@ const NavBar = () =>{
             {/* tabs */}
             <Menu.Menu className='menu-tabs' position='right'>
                 <Menu.Item name='Host an experience' > 
-                <NavLink to="/hostexpereince">Host an experience</NavLink> 
+                <NavLink to="/hostanexpereince">Host an experience</NavLink> 
                 </Menu.Item>
 
                 <Menu.Item name='Sign up'> 

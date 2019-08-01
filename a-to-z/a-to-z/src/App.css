@@ -3,6 +3,9 @@
   margin: 8%;
   margin-top: 3%;
   height: 100%;
+  /* Photo by Marisa Franco on Unsplash */
+  /* background-image: 'https://images.unsplash.com/photo-1436811460420-a04ba62d66fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80'; */
+
 }
 
 .App-header {
@@ -18,4 +21,9 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.sign-up-form{
+  margin-top: 30%;
+  ;
 }

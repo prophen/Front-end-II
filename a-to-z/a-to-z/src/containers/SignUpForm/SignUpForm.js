@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Grid, Form, Message} from 'semantic-ui-react';
-import {Link, Redirect } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import { __values } from 'tslib';
 
 const SignUpForm = (props) => {
@@ -25,6 +25,7 @@ const SignUpForm = (props) => {
     };
 
     return (
+        <div className='sign-up-form'> 
 
         <Grid centered columns={2} verticalAlign='middle' >
         <Grid.Column>
@@ -60,7 +61,7 @@ const SignUpForm = (props) => {
         </Grid>
    
 
-
+        </div>
 
 
 
