@@ -8,10 +8,7 @@ function ExperienceCard(props) {
     <Card className="all-cards">
       <Image src={photos} size="medium" wrapped ui={false} />
       <Card.Content>
-        <Card.Header>
-          
-          {title}
-        </Card.Header>
+        <Card.Header>{title}</Card.Header>
       </Card.Content>
     </Card>
   );
