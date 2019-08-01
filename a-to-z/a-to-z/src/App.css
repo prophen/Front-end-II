@@ -3,6 +3,11 @@
   margin: 8%;
   margin-top: 3%;
   height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1436811460420-a04ba62d66fd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1651&q=80");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100rem;
 }
 
 .App-header {
