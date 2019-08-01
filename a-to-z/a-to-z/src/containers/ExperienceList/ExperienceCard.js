@@ -1,18 +1,14 @@
 import React from "react";
 import { Card, Image } from "semantic-ui-react";
 import "./ExperienceList.css";
+
 function ExperienceCard(props) {
-  const {
-    title,
-    photos
-  } = props.experience;
+  const { title, photos } = props.experience;
   return (
-    <Card fluid>
+    <Card className="all-cards">
+      <Image src={photos} size="medium" wrapped ui={false} />
       <Card.Content>
-        <Card.Header>
-          <Image src={photos} size="small" floated="left" />
-          {title}
-        </Card.Header>
+        <Card.Header>{title}</Card.Header>
       </Card.Content>
     </Card>
   );

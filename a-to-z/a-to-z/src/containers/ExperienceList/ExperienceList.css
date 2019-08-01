@@ -7,3 +7,17 @@ p {
   text-align: left;
 }
 
+h1 {
+  padding: 20px;
+  margin: 20px 20px;
+}
+
+.ui.card.all-cards{
+  margin-top: 15px;
+}
+
+.ui.card>.image>img, .ui.cards>.card>.image>img {
+  height: 200px;
+  width: 100%;
+}
+
