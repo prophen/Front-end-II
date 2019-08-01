@@ -1,7 +1,11 @@
 import React from "react";
-
+import AddForm from './AddForm'
 function AddExperience() {
-  return <>Add Experience</>;
+  return (
+  <>
+  <h1>Add Experience</h1>
+  <AddForm />
+  </>)
 }
 
 export default AddExperience;
