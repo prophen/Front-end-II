@@ -13,7 +13,7 @@ export default function AppRouter() {
     <>
       <Switch>
         <Route path="/experiences/add" component={AddExperience} />
-        <Route exact path="/" component={ExperienceList} />
+        {/* <Route exact path="/" component={ExperienceList} /> */}
         <Route path="/experiences/:id" component={SingleExperience} />
         <Route path="/signup" component={SignUpForm} />
         <Route path="/login" component={LoginForm} />
